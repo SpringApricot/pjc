@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pdf2_zad4", "pdf2_zad4\pdf2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pdf3_zad2", "pdf3_zad2\pdf3_zad2.vcxproj", "{2CF29EB9-1F58-48D6-8A74-A8708D78843F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pdf3_zad3", "pdf3_zad3\pdf3_zad3.vcxproj", "{7FD80A85-CC0E-44BB-B2E9-22401798982D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{2CF29EB9-1F58-48D6-8A74-A8708D78843F}.Release|x64.Build.0 = Release|x64
 		{2CF29EB9-1F58-48D6-8A74-A8708D78843F}.Release|x86.ActiveCfg = Release|Win32
 		{2CF29EB9-1F58-48D6-8A74-A8708D78843F}.Release|x86.Build.0 = Release|Win32
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Debug|x64.ActiveCfg = Debug|x64
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Debug|x64.Build.0 = Debug|x64
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Debug|x86.ActiveCfg = Debug|Win32
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Debug|x86.Build.0 = Debug|Win32
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Release|x64.ActiveCfg = Release|x64
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Release|x64.Build.0 = Release|x64
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Release|x86.ActiveCfg = Release|Win32
+		{7FD80A85-CC0E-44BB-B2E9-22401798982D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

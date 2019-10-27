@@ -1,6 +1,3 @@
-// pdf3_zad2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include "pdf3_zad2.h"
 

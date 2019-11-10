@@ -1,4 +1,3 @@
-#include <iostream>
 #include "pdf4_zad1.h"
 
 int main()

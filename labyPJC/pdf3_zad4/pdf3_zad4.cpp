@@ -25,16 +25,17 @@ bool isLetter(char c) { //2
 }
 
 char* reverse(char* cstr) { //3 //TODO bs
-	const size_t mylength = length(cstr);
-	char tmp = *cstr;
-	char* reversed = &tmp;
+	size_t mylength;
+	mylength = length(cstr);
+	char tmp;
 
-	for (int i = mylength -1, j = 0; i >= 0; i--, j++) {
-		*(reversed + j) = *(cstr + i);
+	for (int i = 0; i < (mylength - 1) / 2; i++) {
+		tmp = *(cstr + i);
+		*(cstr + i) = *(cstr + mylength - 1 - i);
+		*(cstr + mylength - 1 - i) = tmp;
 	}
-	*(reversed + mylength) = '/0';
 
-	return reversed;
+	return cstr;
 }
 
 size_t words(const char* cstr) { //4

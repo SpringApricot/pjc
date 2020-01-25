@@ -13,13 +13,14 @@ public:
 
     A& operator = (const A& other) {
         arr = new int[other.size];
+        size = other.size;
         for (int i = 0; i < size; i++) {
             arr[i] = other.arr[i];
         }
     }
 
     void printA() {
-        std::cout << "    > Array:" << std::endl;
+        std::cout << "    > Array, size " << size << std::endl;
         for (int i = 0; i < size; i++) {
             std::cout << i << " : " << arr[i] << std::endl;
         }
@@ -139,7 +140,7 @@ void check5() {
 //Main '\_:)_/' <- rip unicode
 int main()
 {
-    check5();
+    check1();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

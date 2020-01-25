@@ -26,16 +26,47 @@ public:
     }
 };
 
-int main()
-{
-    std::cout << "Hello World!\n";
+struct Node {
+    int data;
+    Node* next;
 
-    int arr[] = {1, 2, 3, 4};
+    Node(int data) : data(data), next(nullptr) {};
+
+    void add(int data) {
+        Node* current = this;
+        while (current->next != nullptr) current = current->next;
+        current->next = new Node(data);
+    }
+};
+
+int fun(const Node* head) {
+    const Node* current = head;
+    while (current->next->next != nullptr) current = current->next;
+    return current->data;
+}
+
+void check1() {
+    int arr[] = { 1, 2, 3, 4 };
     A* a = new A(arr, 4);
     A b = *a;
     b.printA();
     delete(a);
     b.printA();
+}
+
+void check3() {
+    Node* head = new Node(1);
+    head->add(2);
+    head->add(3);
+    head->add(4);
+    head->add(5);
+    head->add(6);
+    std::cout << fun(head) << std::endl;
+}
+
+int main()
+{
+    check3();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

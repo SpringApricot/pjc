@@ -3,6 +3,7 @@
 
 #include <iostream>
 
+//Klasy do rozwiazan
 class A {
     int* arr;
     int size;
@@ -39,12 +40,32 @@ struct Node {
     }
 };
 
+struct Point {
+    double x, y;
+
+    Point(double x, double y) : x(x), y(y) {};
+};
+
+struct Rect {
+    Point dl, gp;
+
+    Rect(Point dl, Point gp) : dl(dl), gp(gp) {};
+};
+
+//Funkcje do rozwiazan
 int fun(const Node* head) {
     const Node* current = head;
     while (current->next->next != nullptr) current = current->next;
     return current->data;
 }
 
+double perim(const Rect* pr) {
+    double horizontal = pr->gp.x - pr->dl.x;
+    double vertical = pr->gp.y - pr->dl.y;
+    return 2 * horizontal + 2 * vertical;
+}
+
+//Funkcje sprawdzajace rozwi¹zania
 void check1() {
     int arr[] = { 1, 2, 3, 4 };
     A* a = new A(arr, 4);
@@ -64,9 +85,15 @@ void check3() {
     std::cout << fun(head) << std::endl;
 }
 
+void check4() {
+    Rect* rect = new Rect(Point(-3.5, -3.5), Point(-1, -1));
+    std::cout << perim(rect) << std::endl;
+}
+
+//Main '\_:)_/' <- rip unicode
 int main()
 {
-    check3();
+    check4();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
